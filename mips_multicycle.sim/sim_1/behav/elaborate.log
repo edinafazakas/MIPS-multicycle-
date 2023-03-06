@@ -1,0 +1,26 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 415097e419d14a4c88cd1665e8838955 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiCycle_behav xil_defaultlib.multiCycle -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.procmem_definitions
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ALUControl [alucontrol_default]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlUnit [controlunit_default]
+Compiling architecture behave of entity xil_defaultlib.instreg [instreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memory [memory_default]
+Compiling architecture behave of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture behave of entity xil_defaultlib.pc [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.multicycle
+Built simulation snapshot multiCycle_behav

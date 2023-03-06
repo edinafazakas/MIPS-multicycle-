@@ -1,0 +1,465 @@
+
+*** Running vivado
+    with args -log multiCycle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiCycle.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source multiCycle.tcl -notrace
+Command: synth_design -top multiCycle -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22116 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 283.488 ; gain = 73.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'multiCycle' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:15]
+INFO: [Synth 8-3491] module 'ALUControl' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/aluControl.vhd:7' bound to instance 'ALUControl1' of component 'ALUControl' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/aluControl.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (1#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/aluControl.vhd:13]
+INFO: [Synth 8-3491] module 'alu' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/alu.vhd:6' bound to instance 'ALU1' of component 'ALU' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/alu.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/alu.vhd:15]
+INFO: [Synth 8-3491] module 'controlUnit' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:6' bound to instance 'ControlUnit1' of component 'ControlUnit' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'controlUnit' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'controlUnit' (3#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:25]
+INFO: [Synth 8-3491] module 'instreg' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/IR.vhd:7' bound to instance 'InstructionReg' of component 'instreg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'instreg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/IR.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'instreg' (4#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/IR.vhd:21]
+INFO: [Synth 8-3491] module 'Memory' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/memory.vhd:9' bound to instance 'Memory1' of component 'Memory' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Memory' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/memory.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (5#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/memory.vhd:19]
+INFO: [Synth 8-3491] module 'regfile' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/RegisterBlock.vhd:7' bound to instance 'RegisterFile' of component 'regfile' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/RegisterBlock.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/RegisterBlock.vhd:20]
+INFO: [Synth 8-3491] module 'pc' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/pc.vhd:6' bound to instance 'pCounter' of component 'pc' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/pc.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'pc' (7#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/pc.vhd:16]
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/Reg.vhd:5' bound to instance 'RegB' of component 'reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:128]
+INFO: [Synth 8-638] synthesizing module '\reg ' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/Reg.vhd:12]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (8#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/Reg.vhd:12]
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/Reg.vhd:5' bound to instance 'RegA' of component 'reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:130]
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/Reg.vhd:5' bound to instance 'RegALUout' of component 'reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:132]
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/Reg.vhd:5' bound to instance 'MemoryDataRegister' of component 'reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:134]
+INFO: [Synth 8-226] default block is never used [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:165]
+INFO: [Synth 8-226] default block is never used [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'multiCycle' (9#1) [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/imports/new/mips.vhd:15]
+WARNING: [Synth 8-3331] design Memory has unconnected port address[31]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 320.926 ; gain = 110.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 320.926 ; gain = 110.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 320.926 ; gain = 110.637
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5544] ROM "ALUcon" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/alu.vhd:30]
+INFO: [Synth 8-5545] ROM "z_uns" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'controlUnit'
+INFO: [Synth 8-5546] ROM "currentState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "PCWrite" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegDst" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IorD" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MemRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PCWrite" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "currentState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "currentState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "currentState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registerfile_reg[31]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'ALUcon_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/aluControl.vhd:19]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:79]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE3 |                              010 |                              100
+                 iSTATE5 |                              011 |                              110
+                 iSTATE6 |                              100 |                              111
+*
+                 iSTATE4 |                              101 |                              101
+                 iSTATE1 |                              110 |                              010
+                 iSTATE2 |                              111 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'sequential' in module 'controlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'MemToReg_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWriteCond_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWrite_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'IorD_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUop_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSource_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/ControlUnit.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'Rdata_reg' [D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.srcs/sources_1/new/memory.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 339.828 ; gain = 129.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 37    
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   5 Input     32 Bit        Muxes := 2     
+	  65 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 55    
+	   3 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiCycle 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+Module ALUControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module controlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+Module instreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+Module Memory 
+Detailed RTL Component Info : 
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "ALU1/z_uns" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ControlUnit1/ALUop_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ControlUnit1/PCSource_reg[1]' (LDC) to 'ControlUnit1/PCSource_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ControlUnit1/PCSource_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ControlUnit1/PCWriteCond_reg )
+WARNING: [Synth 8-3332] Sequential element (ALUControl1/ALUcon_reg[3]) is unused and will be removed from module multiCycle.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit1/PCWriteCond_reg) is unused and will be removed from module multiCycle.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit1/ALUop_reg[0]) is unused and will be removed from module multiCycle.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit1/PCSource_reg[0]) is unused and will be removed from module multiCycle.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit1/ALUSrcB_reg[1]) is unused and will be removed from module multiCycle.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit1/ALUSrcB_reg[0]) is unused and will be removed from module multiCycle.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives       | 
++------------+------------------+-----------+----------------------+------------------+
+|multiCycle  | Memory1/mem1_reg | Implied   | 256 x 32             | RAM256X1S x 32   | 
++------------+------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |     8|
+|3     |LUT1      |     2|
+|4     |LUT2      |     6|
+|5     |LUT3      |   121|
+|6     |LUT4      |     2|
+|7     |LUT5      |    85|
+|8     |LUT6      |   664|
+|9     |MUXF7     |   256|
+|10    |RAM256X1S |    32|
+|11    |FDCE      |  1094|
+|12    |FDRE      |   131|
+|13    |LD        |    32|
+|14    |LDC       |     7|
+|15    |LDCP      |     3|
+|16    |LDP       |     2|
+|17    |IBUF      |     2|
+|18    |OBUF      |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------+------------+------+
+|      |Instance             |Module      |Cells |
++------+---------------------+------------+------+
+|1     |top                  |            |  2481|
+|2     |  ALU1               |alu         |     8|
+|3     |  ALUControl1        |ALUControl  |    35|
+|4     |  ControlUnit1       |controlUnit |   161|
+|5     |  InstructionReg     |instreg     |    84|
+|6     |  Memory1            |Memory      |    64|
+|7     |  MemoryDataRegister |\reg        |    64|
+|8     |  RegA               |reg_0       |    64|
+|9     |  RegALUout          |reg_1       |    45|
+|10    |  RegB               |reg_2       |    32|
+|11    |  RegisterFile       |regfile     |  1856|
+|12    |  pCounter           |pc          |    32|
++------+---------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 515.375 ; gain = 305.086
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 515.375 ; gain = 305.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 515.375 ; gain = 305.086
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  LD => LDCE: 32 instances
+  LDC => LDCE: 7 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 3 instances
+  LDP => LDPE: 2 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 542.934 ; gain = 332.645
+INFO: [Common 17-1381] The checkpoint 'D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.runs/synth_1/multiCycle.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 542.934 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 19 17:30:54 2022...

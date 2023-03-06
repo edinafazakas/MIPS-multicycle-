@@ -1,0 +1,4 @@
+Running: xsim.dir/multiCycle_func_impl/xsimk.exe -simmode gui -wdb multiCycle_func_impl.wdb -simrunnum 0 -socket 65524
+Design successfully loaded
+Design Loading Memory Usage: 9712 KB (Peak: 9712 KB)
+Design Loading CPU Usage: 0 ms

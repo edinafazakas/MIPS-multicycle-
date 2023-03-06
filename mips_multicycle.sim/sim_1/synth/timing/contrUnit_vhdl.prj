@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl work  "../../../../mips_multicycle.srcs/sources_1/new/contrUnit.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.sim/sim_1/impl/func/multiCycle_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-307] analyzing entity controlUnit
+INFO: [VRFC 10-307] analyzing entity reg
+INFO: [VRFC 10-307] analyzing entity multiCycle

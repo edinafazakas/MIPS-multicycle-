@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MATERIALE AN 3 SEM 1/SSC/lab7/mips_multicycle/mips_multicycle.sim/sim_1/synth/timing/contrUnit_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LDCP_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module LDCP_HD1
+INFO: [VRFC 10-311] analyzing module LDCP_HD2
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-311] analyzing module instreg
+INFO: [VRFC 10-311] analyzing module multiCycle
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-311] analyzing module reg
+INFO: [VRFC 10-311] analyzing module reg_0
+INFO: [VRFC 10-311] analyzing module reg_1
+INFO: [VRFC 10-311] analyzing module reg_2
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module glbl
